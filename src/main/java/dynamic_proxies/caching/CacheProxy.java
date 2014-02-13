@@ -27,7 +27,7 @@ public class CacheProxy implements InvocationHandler {
                 if (args[0] instanceof Purchase) {
                     Purchase purchase = (Purchase) args[0];
                     //This is a sysout of what we might write to a redis store. It means we don't need to tie this caching logic into our main class logic.
-                    System.out.println("Someone from "+purchase.getCustomerSuburb() + " just bought a "+purchase.getItemDescription()+ "!");
+                    System.out.println("Someone from " + purchase.getCustomerSuburb() + " just bought a " + purchase.getItemDescription() + "!");
                 } else {
                     System.out.println("Proxy for a method which does not have a purchase as the first argument: " + args[0]);
                 }
