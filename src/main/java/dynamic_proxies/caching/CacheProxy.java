@@ -9,6 +9,7 @@ import java.lang.reflect.Proxy;
 
 public class CacheProxy implements InvocationHandler {
 
+
     private Object realObject;
 
     public CacheProxy(Object obj) {
